@@ -1,0 +1,81 @@
+body 
+{
+    font-family: 'Roboto', sans-serif;
+    width: 600px;
+    
+}
+
+.div1 {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: fit-content;
+
+}
+
+h1, h2 
+{
+    font-weight: 700;   
+}
+
+img 
+{
+    width: 500px;
+    height: 300px;
+}
+
+footer 
+{
+    background-color: black;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover 
+{
+    color:#c57123;
+}
+
+.ftr_text
+{
+    color: white;
+    padding-left: 10px;
+}
+
+#ul1 > li {
+    display: inline;
+    padding: 10px 10px 10px 0px;
+}
+
+#ul1
+{
+    padding: 0px;
+}
+
+#ul2 
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+table {
+    width: 500px;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+th, td {
+    border: 2px solid #000000;
+    padding: 10px;
+    text-align: left;
+}
+
