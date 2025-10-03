@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    max-width: 600px;
+    width: fit-content;
+}
+
+main {
+    margin-bottom: 90px;
+    width: fit-content;
+}
+
+body 
+{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.wrapper{
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h1, h2 
+{
+    font-weight: 700;   
+}
+
+img 
+{
+    width: 500px;
+    height: auto;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover 
+{
+    color: tomato;
+}
+
+#nav_bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;  
+    padding: 0;
+}
+
+#nav_bar li {
+    list-style: none;  
+}
+
+#advnt
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+table {
+    width: 500px;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+th, td {
+    border: 2px solid #000000;
+    padding: 10px;
+    text-align: left;
+}
+
+footer 
+{
+    background-color: black;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    right: 0;    
+    bottom: 0;
+    margin-top: 75px;
+}
+
+.ftr_text
+{
+    color: white;
+    padding-left: 10px;
+}
+/* стили для страницы Собрать ланч */
+
+.bluda, .mainbluda, .drinks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.bluda > div, .mainbluda > div, .drinks > div {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    border-radius: 35px;
+    cursor: pointer;
+    background-color: white;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+    transition: border 0.3s ease;
+}
+
+.bluda > div:hover, .mainbluda > div:hover, .drinks > div:hover {
+    border: 2px solid tomato;
+}
+
+.bluda > div:hover button,
+.mainbluda > div:hover button,
+.drinks > div:hover button {
+    background-color: tomato;
+    color: white;
+}
+
+.bluda img, .mainbluda img, .drinks img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 35px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.name {
+    font-size: 18px;
+    margin: 10px 0;
+    flex-grow: 1;
+}
+
+.weight {
+    color: #666;
+    margin: 10px 0;
+}
+
+.bluda button, .mainbluda button, .drinks button {
+    background-color: #f1eee9;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 800px) {
+    .bluda, .mainbluda, .drinks {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .bluda, .mainbluda, .drinks {
+        grid-template-columns: 1fr;
+    }
+}
